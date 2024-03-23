@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zing MP3</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="body">
+            <div class="sidebar">
+                <img src="./assets/img/ZingMP3logo.svg.png" alt="" class="sidebar__logo">
+                <div class="sidebar__menu">
+                    <nav class="navbar-1">
+                        <ul class="navbar__menu-1">
+                            <li class="navbar__item js__navbar-item">
+                                <a href="#" class="navbar__item-link">
+                                    <i class="fa-solid fa-house navbar__item-icon"></i>
+                                    <span class="navbar__item-name">Cá nhân</span>
+                                    <i class="fa-regular fa-circle-play icon-play"></i>
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__item-link">
+                                    <i class="fa-solid fa-compact-disc navbar__item-icon"></i>
+                                    <span class="navbar__item-name">Khám phá</span>
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__item-link">
+                                    <i class="fa-solid fa-record-vinyl navbar__item-icon"></i>
+                                    <span class="navbar__item-name">#zingchart</span>
+                                    <i class="fa-regular fa-circle-play icon-play"></i>
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__item-link">
+                                    <i class="fa-solid fa-circle-radiation navbar__item-icon"></i>
+                                    <span class="navbar__item-name">Radio <span class="navbar__item-name-color">LIVE</span></span>
+                                    <i class="fa-regular fa-circle-play icon-play"></i>
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__item-link">
+                                    <i class="fa-solid fa-rectangle-ad navbar__item-icon"></i>
+                                    <span class="navbar__item-name">Theo dõi</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="line"></div>
+                    <div class="navbar-2">
+                        <ul class="navbar__menu-2">
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__item-link">
+                                    <i class="fa-solid fa-music navbar__item-icon"></i>
+                                    <span class="navbar__item-name">Nhạc mới</span>
+                                    <i class="fa-regular fa-circle-play icon-play"></i>
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__item-link">
+                                    <i class="fa-solid fa-icons navbar__item-icon"></i>
+                                    <span class="navbar__item-name">Thể loại</span>
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__item-link">
+                                    <i class="fa-regular fa-star navbar__item-icon"></i>
+                                    <span class="navbar__item-name">Top 100</span>
+                                    <i class="fa-regular fa-circle-play icon-play"></i>
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__item-link">
+                                    <i class="fa-solid fa-microphone-lines navbar__item-icon"></i>
+                                    <span class="navbar__item-name">MV</span>
+                                </a>
+                            </li>
+
+                            <div class="sidebar__vip">
+                                <div class="sidebar__vip-title">Nghe nhạc không quảng cáo cùng kho nhạc VIP</div>
+                                <a class="sidebar__vip-btn">NÂNG CẤP VIP</a>
+                            </div>
+
+                            <ul class="navbar__item-folder">
+                                <div class="navbar__item-title">
+                                    <span>THƯ VIỆN</span>
+                                    <i class="fa-solid fa-pencil icon-pencil"></i>
+                                </div>
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__item-link">
+                                        <i class="fa-solid fa-music icon-music" style="background-color: #018fff;"></i>
+                                        <span class="navbar__item-name">Bài hát</span>
+                                        <i class="fa-regular fa-circle-play icon-play"></i>
+                                    </a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__item-link">
+                                        <i class="fa-solid fa-list icon-music" style="background-color: #93ca53;"></i>
+                                        <span class="navbar__item-name">Playlist</span>
+                                    </a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__item-link">
+                                        <i class="fa-solid fa-clock icon-music" style="background-color: #fab653;"></i>
+                                        <span class="navbar__item-name">Gần đây</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                           
+                        </ul>
+
+                        
+                    </div>
+
+                </div>
+
+                <div class="sidebar__playlist">
+                    <button class="playlist__btn">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Tạo playlist mới</span>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="header">
+                    <div class="header__left">
+                        <i class="fa-solid fa-arrow-left-long header__left-icon"></i>
+                        <i class="fa-solid fa-arrow-right-long header__left-icon"></i>
+                        <div class="header__search">
+                            <button class="header__search-btn">
+                                <i class="fa-solid fa-magnifying-glass header__search-icon"></i>
+                            </button>
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát,...">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Đề xuất cho bạn</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <i class="fa-solid fa-arrow-trend-up header__search-history-icon"></i>
+                                        <span class="header__search-history-name">thị mầu</span>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <i class="fa-solid fa-arrow-trend-up header__search-history-icon"></i>
+                                        <span class="header__search-history-name">nếu lúc đó</span>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <i class="fa-solid fa-arrow-trend-up header__search-history-icon"></i>
+                                        <span class="header__search-history-name">bật tình yêu lên</span>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <i class="fa-solid fa-arrow-trend-up header__search-history-icon"></i>
+                                        <span class="header__search-history-name">em là kẻ đáng thương</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__right">
+                        <div class="dowload__desktop">
+                            <a href="#" class="dowload__desktop-btn">
+                                <i class="fa-solid fa-download"></i>
+                                <span>Tải bản Windows</span> 
+                            </a>
+                        </div>
+
+                        <ul class="header__right-list">
+                            <li class="header__item">
+                                <a href="https://zingmp3.vn/vip?utm_source=desktop&utm_campaign=VIP&utm_medium=icon-header" class="header__item-vip">VIP</a>
+                                 <div class="header__item-vip-hover">Nâng cấp VIP</div>
+                            </li>
+                           
+                            <li class="header__item setting-focus">
+                                <button class="header__item-btn-setting">
+                                    <i class="fa-solid fa-gear header__item-icon"></i>  
+                                </button>
+                                <div class="header__item-icon-hover">Cài đặt</div>
+                                <div class="header__item-setting">
+                                    <ul class="header__item-setting-list-1">
+                                        <li class="header__item-setting-item setting__item-1">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <span>Trình phát nhạc</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+
+                                        </li>
+                                        <li class="header__item-setting-item">
+                                            <i class="fa-solid fa-brush"></i>
+                                            <span>Giao diện</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </li>
+                                    </ul>
+                                    <ul class="header__item-setting-list-2">
+                                        <li class="header__item-setting-item">
+                                                <i class="fa-solid fa-circle-info"></i>
+                                                <span>Giới thiệu</span>
+                                        </li>
+                                        <li class="header__item-setting-item">
+                                            <i class="fa-solid fa-phone"></i>
+                                            <span>Liên hệ</span>
+                                            <i class="fa-solid fa-arrow-turn-up"></i>
+                                        </li>
+                                        <li class="header__item-setting-item">
+                                            <i class="fa-solid fa-rectangle-ad"></i>
+                                            <span>Quảng cáo</span>
+                                            <i class="fa-solid fa-arrow-turn-up"></i>
+                                        </li>
+                                        <li class="header__item-setting-item">
+                                            <i class="fa-solid fa-clipboard-list"></i>
+                                            <span>Thỏa thuận sử dụng</span>
+                                            <i class="fa-solid fa-arrow-turn-up"></i>
+                                        </li>
+                                        <li class="header__item-setting-item">
+                                            <i class="fa-solid fa-shield"></i>
+                                            <span>Chính sách bảo mật</span>
+                                            <i class="fa-solid fa-arrow-turn-up"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header__item">
+                                <button class="header__item-user-btn">
+                                    <img src="./assets/img/user.jpg" alt="" class="header__item-img">
+                                </button>
+                                <div class="header__item-user">
+                                    <ul class="header__item-user-list">
+                                        <li class="header__item-user-item">
+                                            <i class="fa-regular fa-gem"></i>
+                                            <span>Nâng cấp vip</span>
+                                            <i class="fa-solid fa-arrow-turn-up"></i>
+    
+                                        </li>
+                                        <li class="header__item-user-item">
+                                            <i class="fa-solid fa-gem"></i>
+                                            <span>Mua gói vip</span>
+                                            <i class="fa-solid fa-arrow-turn-up"></i>
+    
+                                        </li>
+                                        <li class="header__item-user-item">
+                                            <i class="fa-solid fa-ban"></i>
+                                            <span>Danh sách chặn</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="header__item-user-list" style="border-bottom: none; padding-bottom: 0;">
+                                        <li class="header__item-user-item">
+                                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                            <span>Đăng xuất</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="maincontent">
+                    <div class="maincontent__gallery js-maincontent__gallery">
+                        <div id="left" class="gallery__icon-left js-gallery__icon">
+                            <i class="fa-solid fa-chevron-left "></i>
+                        </div>
+                        <div class="maincontent__gallery-list js-maincontent__gallery-list">
+                            <a href="" class="maincontent__gallery-link js-maincontent__gallery-link">
+                                <img src="./assets/img/image_1.jpg" alt="" class="maincontent__gallery-image">
+                            </a>
+                            <a href="" class="maincontent__gallery-link" >
+                                <img src="./assets/img/image_2.jpg" alt="" class="maincontent__gallery-image">
+                            </a>
+                            <a href="" class="maincontent__gallery-link">
+                                <img src="./assets/img/image_3.jpg" alt="" class="maincontent__gallery-image">
+                            </a>
+                            <a href="" class="maincontent__gallery-link">
+                                <img src="./assets/img/image_4.jpg" alt="" class="maincontent__gallery-image">
+                            </a>
+                            <a href="" class="maincontent__gallery-link">
+                                <img src="./assets/img/image_5.jpg" alt="" class="maincontent__gallery-image">
+                            </a>
+                        </div>
+                        <div id="right" class="gallery__icon-right js-gallery__icon">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="maincontent__recently">
+                        <div class="maincontent__recently-header">
+                            <h2 class="maincontent__recently-header-left">Gần đây</h2>
+                            <a href="" class="maincontent__recently-header-right">TẤT CẢ ></a>
+                        </div>
+
+                        <div class="maincontent__recently-body">
+                            <div class="maincontent__recently-body-cart">
+                                <a href="" class="maincontent__recently-body-link">
+                                    <img src="./assets/img/image_6.webp" alt="" class="maincontent__recently-body-img">
+                                    <div class="maincontent__recently-body-play">
+                                        <div class="maincontent__recently-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="maincontent__recently-body-content">#zingchart</a>
+                            </div>
+                            <div class="maincontent__recently-body-cart">
+                                <a href="" class="maincontent__recently-body-link">
+                                    <img src="./assets/img/image_7.jpg" alt="" class="maincontent__recently-body-img">
+                                    <div class="maincontent__recently-body-play">
+                                        <div class="maincontent__recently-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="maincontent__recently-body-content">Mixtape Chuông báo thức(Sáng rồi)</a>
+                            </div>
+                            <div class="maincontent__recently-body-cart">
+                                <a href="" class="maincontent__recently-body-link">
+                                    <img src="./assets/img/image_8.webp" alt="" class="maincontent__recently-body-img">
+                                    <div class="maincontent__recently-body-play">
+                                        <div class="maincontent__recently-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="maincontent__recently-body-content">Lofi một chút thôi</a>
+                            </div>
+                            <div class="maincontent__recently-body-cart">
+                                <a href="" class="maincontent__recently-body-link">
+                                    <img src="./assets/img/image9.webp" alt="" class="maincontent__recently-body-img">
+                                    <div class="maincontent__recently-body-play">
+                                        <div class="maincontent__recently-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="maincontent__recently-body-content">Những bài hát hay nhất của 911</a>
+                            </div>
+                            <div class="maincontent__recently-body-cart">
+                                <a href="" class="maincontent__recently-body-link">
+                                    <img src="./assets/img/image_10.webp" alt="" class="maincontent__recently-body-img">
+                                    <div class="maincontent__recently-body-play">
+                                        <div class="maincontent__recently-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="maincontent__recently-body-content">Nhạc xuân remix</a>
+                            </div>
+                            <div class="maincontent__recently-body-cart">
+                                <a href="" class="maincontent__recently-body-link">
+                                    <img src="./assets/img/image_11.webp" alt="" class="maincontent__recently-body-img">
+                                    <div class="maincontent__recently-body-play">
+                                        <div class="maincontent__recently-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="maincontent__recently-body-content">Tết sum vầy</a>
+                            </div>
+                            <div class="maincontent__recently-body-cart">
+                                <a href="" class="maincontent__recently-body-link">
+                                    <img src="./assets/img/image_12.webp" alt="" class="maincontent__recently-body-img">
+                                    <div class="maincontent__recently-body-play">
+                                        <div class="maincontent__recently-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="maincontent__recently-body-content">100% Hit</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="maincontent__list">
+                        <div class="maincontent__list-header">
+                            <h2>Có thể bạn muốn nghe</h2>
+                        </div>
+                        <div class="maincontent__list-body">
+                            <div class="maincontent__list-body-cart">
+                                <a href="" class="maincontent__list-body-link">
+                                    <img src="./assets/img/image_13.webp" alt="" class="maincontent__list-body-img">
+                                    <div class="maincontent__list-body-play">
+                                        <div class="maincontent__list-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="maincontent__list-body-content">Dance Việt Hay Nhất</a>
+                                <a href="" class="maincontent__list-body-singer">Masew, K-ICM, SlimV</a>
+                            </div>
+                            <div class="maincontent__list-body-cart">
+                                <a href="" class="maincontent__list-body-link">
+                                    <img src="./assets/img/image_14.webp" alt="" class="maincontent__list-body-img">
+                                    <div class="maincontent__list-body-play">
+                                        <div class="maincontent__list-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="maincontent__list-body-content">Remix Việt Hay Nhất</a>
+                                <a href="" class="maincontent__list-body-singer">Huyền Tâm Môn, Tăng Duy Tân, Orange</a>
+                            </div>
+                            <div class="maincontent__list-body-cart">
+                                <a href="" class="maincontent__list-body-link">
+                                    <img src="./assets/img/image_15.webp" alt="" class="maincontent__list-body-img">
+                                    <div class="maincontent__list-body-play">
+                                        <div class="maincontent__list-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="maincontent__list-body-content">Guitar V-Pop</a>
+                                <a href="" class="maincontent__list-body-singer">Hoàng Yến Chibi, Hoàng Dũng, Thái Trinh</a>
+                            </div>
+                            <div class="maincontent__list-body-cart">
+                                <a href="" class="maincontent__list-body-link">
+                                    <img src="./assets/img/image_16.webp" alt="" class="maincontent__list-body-img">
+                                    <div class="maincontent__list-body-play">
+                                        <div class="maincontent__list-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="maincontent__list-body-content">V-Pop: 100 Hit Thập Niên</a>
+                                <a href="" class="maincontent__list-body-singer">Noo Phước Thịnh, Erik, Hương Tràm</a>
+                            </div>
+                            <div class="maincontent__list-body-cart">
+                                <a href="" class="maincontent__list-body-link">
+                                    <img src="./assets/img/image_17.webp" alt="" class="maincontent__list-body-img">
+                                    <div class="maincontent__list-body-play">
+                                        <div class="maincontent__list-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="maincontent__list-body-content">V-Pop: Hit Quốc Dân</a>
+                                <a href="" class="maincontent__list-body-singer">Erik, Hoàng Thùy Linh, Mono</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="maincontent__release">
+                        <h2 class="maincontent__release-header">Mới phát hành</h2>
+                        <div class="maincontent__release-choice">
+                            <div class="maincontent__release-list">
+                                <button class="maincontent__release-btn release__active-btn">TẤT CẢ</button>
+                                <button class="maincontent__release-btn">VIỆT NAM</button>
+                                <button class="maincontent__release-btn">QUỐC TẾ</button>
+                            </div>
+                            <a href="" class="maincontent__release-choice-link">TẤT CẢ ></a>
+                        </div>
+
+                        <div class="maincontent__release-body">
+                            <ul class="maincontent__release-body-row">
+                                <li class="maincontent__release-body-item">
+                                    <a href="" class="maincontent__release-body-link">
+                                        <div class="maincontent__release-body-image">
+                                            <img src="./assets/img/image_18.webp" alt="" class="maincontent__release-body-img">
+                                            <i class="fa-solid fa-play maincontent__release-body-icon"></i>
+                                        </div>
+                                        <div class="maincontent__release-body-content">
+                                            <div class="maincontent__release-body-name">Sau Những Lần Đau</div>
+                                            <div class="maincontent__release-body-singer">Hà Anh, Vinny Vũ</div>
+                                            <div class="maincontent__release-body-time">2 ngày trước</div>
+                                        </div>
+
+                                        <button class="maincontent__release-body-btn">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="maincontent__release-body-item">
+                                    <a href="" class="maincontent__release-body-link">
+                                        <img src="./assets/img/image_19.webp" alt="" class="maincontent__release-body-img">
+                                        <div class="maincontent__release-body-content">
+                                            <div class="maincontent__release-body-name">Kitsch</div>
+                                            <div class="maincontent__release-body-singer">Ive</div>
+                                            <div class="maincontent__release-body-time">Hôm qua</div>
+                                        </div>
+
+                                        <button class="maincontent__release-body-btn">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="maincontent__release-body-item">
+                                    <a href="" class="maincontent__release-body-link">
+                                        <img src="./assets/img/image_20.webp" alt="" class="maincontent__release-body-img">
+                                        <div class="maincontent__release-body-content">
+                                            <div class="maincontent__release-body-name">Like Crazy</div>
+                                            <div class="maincontent__release-body-singer">Jimin</div>
+                                            <div class="maincontent__release-body-time">3 ngày trước</div>
+                                        </div>
+
+                                        <button class="maincontent__release-body-btn">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="maincontent__release-body-row">
+                                <li class="maincontent__release-body-item">
+                                    <a href="" class="maincontent__release-body-link">
+                                        <img src="./assets/img/image_21.webp" alt="" class="maincontent__release-body-img">
+                                        <div class="maincontent__release-body-content">
+                                            <div class="maincontent__release-body-name">Chuyện Chúng Ta Sau Này</div>
+                                            <div class="maincontent__release-body-singer">Hải Đăng Doo</div>
+                                            <div class="maincontent__release-body-time">3 ngày trước</div>
+                                        </div>
+
+                                        <button class="maincontent__release-body-btn">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="maincontent__release-body-item">
+                                    <a href="" class="maincontent__release-body-link">
+                                        <img src="./assets/img/image_23.webp" alt="" class="maincontent__release-body-img">
+                                        <div class="maincontent__release-body-content">
+                                            <div class="maincontent__release-body-name">A Thousand Years</div>
+                                            <div class="maincontent__release-body-singer">James Arthur</div>
+                                            <div class="maincontent__release-body-time">2 ngày trước</div>
+                                        </div>
+
+                                        <button class="maincontent__release-body-btn">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="maincontent__release-body-item">
+                                    <a href="" class="maincontent__release-body-link">
+                                        <img src="./assets/img/image_24.webp" alt="" class="maincontent__release-body-img">
+                                        <div class="maincontent__release-body-content">
+                                            <div class="maincontent__release-body-name">Bông Thiên Điển</div>
+                                            <div class="maincontent__release-body-singer">MT4, Hoàng Dũng</div>
+                                            <div class="maincontent__release-body-time">3 ngày trước</div>
+                                        </div>
+
+                                        <button class="maincontent__release-body-btn">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                    </a>
+                                </li>
+                                
+                                
+                                
+                            </ul>
+                            <ul class="maincontent__release-body-row">
+                                <li class="maincontent__release-body-item">
+                                    <a href="" class="maincontent__release-body-link">
+                                        <img src="./assets/img/image_25.webp" alt="" class="maincontent__release-body-img">
+                                        <div class="maincontent__release-body-content">
+                                            <div class="maincontent__release-body-name">Mãi Không Rời Xa</div>
+                                            <div class="maincontent__release-body-singer">Lương Bích Hữu, Vũ Đặng Quốc Việt</div>
+                                            <div class="maincontent__release-body-time">4 ngày trước</div>
+                                        </div>
+
+                                        <button class="maincontent__release-body-btn">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="maincontent__release-body-item">
+                                    <a href="" class="maincontent__release-body-link">
+                                        <img src="./assets/img/image_26.webp" alt="" class="maincontent__release-body-img">
+                                        <div class="maincontent__release-body-content">
+                                            <div class="maincontent__release-body-name">Tình Em Là Đại Dương</div>
+                                            <div class="maincontent__release-body-singer">Cầm, Duy Mạnh</div>
+                                            <div class="maincontent__release-body-time">2 ngày trước</div>
+                                        </div>
+
+                                        <button class="maincontent__release-body-btn">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="maincontent__release-body-item">
+                                    <a href="" class="maincontent__release-body-link">
+                                        <img src="./assets/img/image_27.webp" alt="" class="maincontent__release-body-img">
+                                        <div class="maincontent__release-body-content">
+                                            <div class="maincontent__release-body-name">Baby</div>
+                                            <div class="maincontent__release-body-singer">Hank, Kado, Wren Evans</div>
+                                            <div class="maincontent__release-body-time">2 ngày trước</div>
+                                        </div>
+
+                                        <button class="maincontent__release-body-btn">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="maincontent__release-body-row">
+                                <li class="maincontent__release-body-item">
+                                    <a href="" class="maincontent__release-body-link">
+                                        <img src="./assets/img/image_22.webp" alt="" class="maincontent__release-body-img">
+                                        <div class="maincontent__release-body-content">
+                                            <div class="maincontent__release-body-name">Lại Nhớ Em Rồi</div>
+                                            <div class="maincontent__release-body-singer">DICKSON, Tuệ Phương</div>
+                                            <div class="maincontent__release-body-time">4 ngày trước</div>
+                                        </div>
+
+                                        <button class="maincontent__release-body-btn">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="maincontent__release-body-item">
+                                    <a href="" class="maincontent__release-body-link">
+                                        <img src="./assets/img/image_28.webp" alt="" class="maincontent__release-body-img">
+                                        <div class="maincontent__release-body-content">
+                                            <div class="maincontent__release-body-name">I Can't Live With You</div>
+                                            <div class="maincontent__release-body-singer">Chi Dân</div>
+                                            <div class="maincontent__release-body-time">2 ngày trước</div>
+                                        </div>
+
+                                        <button class="maincontent__release-body-btn">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="maincontent__release-body-item">
+                                    <a href="" class="maincontent__release-body-link">
+                                        <img src="./assets/img/image_29.webp" alt="" class="maincontent__release-body-img">
+                                        <div class="maincontent__release-body-content">
+                                            <div class="maincontent__release-body-name">Heart Attack</div>
+                                            <div class="maincontent__release-body-singer">Demi Lovato</div>
+                                            <div class="maincontent__release-body-time">2 ngày trước</div>
+                                        </div>
+
+                                        <button class="maincontent__release-body-btn">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="maincontent__chill">
+                        <div class="maincontent__chill-header">
+                            <h2>Chill</h2>
+                        </div>
+                        <div class="maincontent__chill-body">
+                            <div class="maincontent__chill-body-cart">
+                                <a href="" class="maincontent__chill-body-link">
+                                    <img src="./assets/img/image_30.webp" alt="" class="maincontent__chill-body-img">
+                                    <div class="maincontent__chill-body-play">
+                                        <div class="maincontent__chill-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <p class="maincontent__chill-body-content">Va vào những giai điệu thư giãn của V-Pop</p>
+                            </div>
+                            <div class="maincontent__chill-body-cart">
+                                <a href="" class="maincontent__chill-body-link">
+                                    <img src="./assets/img/image_31.webp" alt="" class="maincontent__chill-body-img">
+                                    <div class="maincontent__chill-body-play">
+                                        <div class="maincontent__chill-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <p class="maincontent__chill-body-content">Cảm nhận sự yên bình cùng tiếng đàn Piano</p>
+                            </div>
+                            <div class="maincontent__chill-body-cart">
+                                <a href="" class="maincontent__chill-body-link">
+                                    <img src="./assets/img/image_32.webp" alt="" class="maincontent__chill-body-img">
+                                    <div class="maincontent__chill-body-play">
+                                        <div class="maincontent__chill-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <p class="maincontent__chill-body-content">Dừng lại đây, thả trôi cùng những bài hát bồng bềnh</p>
+                            </div>
+                            <div class="maincontent__chill-body-cart">
+                                <a href="" class="maincontent__chill-body-link">
+                                    <img src="./assets/img/image_33.webp" alt="" class="maincontent__chill-body-img">
+                                    <div class="maincontent__chill-body-play">
+                                        <div class="maincontent__chill-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <p class="maincontent__chill-body-content">Nhạc chill cho tín đồ của Pop</p>
+                            </div>
+                            <div class="maincontent__chill-body-cart">
+                                <a href="" class="maincontent__chill-body-link">
+                                    <img src="./assets/img/image_34.webp" alt="" class="maincontent__chill-body-img">
+                                    <div class="maincontent__chill-body-play">
+                                        <div class="maincontent__chill-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <p class="maincontent__chill-body-content">Thoải mái gác chân và chillout cùng Indie Hàn</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="maincontent__singer">
+                        <div class="maincontent__singer-header">
+                            <h2>Nghệ Sĩ Thịnh Hành</h2>
+                        </div>
+                        <div class="maincontent__singer-body">
+                            <div class="maincontent__singer-body-cart">
+                                <a href="" class="maincontent__singer-body-link">
+                                    <img src="./assets/img/image_35.webp" alt="" class="maincontent__singer-body-img">
+                                    <div class="maincontent__singer-body-play">
+                                        <div class="maincontent__singer-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <p class="maincontent__singer-body-content">'Bật tình yêu' với Tăng Duy Tân và bộ sưu tập Hit nổi</p>
+                            </div>
+                            <div class="maincontent__singer-body-cart">
+                                <a href="" class="maincontent__singer-body-link">
+                                    <img src="./assets/img/image_36.webp" alt="" class="maincontent__singer-body-img">
+                                    <div class="maincontent__singer-body-play">
+                                        <div class="maincontent__singer-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <p class="maincontent__singer-body-content">'ghệ iu dấu của tlinh ơi', nghe tlinh hát ô kì hem?</p>
+                            </div>
+                            <div class="maincontent__singer-body-cart">
+                                <a href="" class="maincontent__singer-body-link">
+                                    <img src="./assets/img/image_37.webp" alt="" class="maincontent__singer-body-img">
+                                    <div class="maincontent__singer-body-play">
+                                        <div class="maincontent__singer-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <p class="maincontent__singer-body-content">Ưng quá chừng bộ sưu tập Hit của AMEE</p>
+                            </div>
+                            <div class="maincontent__singer-body-cart">
+                                <a href="" class="maincontent__singer-body-link">
+                                    <img src="./assets/img/image_38.webp" alt="" class="maincontent__singer-body-img">
+                                    <div class="maincontent__singer-body-play">
+                                        <div class="maincontent__singer-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <p class="maincontent__singer-body-content">'Thị Mầu' Hòa Minzy và những bản Hit đỉnh nhất</p>
+                            </div>
+                            <div class="maincontent__singer-body-cart">
+                                <a href="" class="maincontent__singer-body-link">
+                                    <img src="./assets/img/image_39.webp" alt="" class="maincontent__singer-body-img">
+                                    <div class="maincontent__singer-body-play">
+                                        <div class="maincontent__singer-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <p class="maincontent__singer-body-content">Va vào những flow cực cuốn của rapper MCK</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="maincontent__charts">
+                        <div class="maincontent__charts-header">
+                            <h2 class="maincontent__charts-header-left">Gần đây</h2>
+                            <a href="" class="maincontent__charts-header-right">TẤT CẢ ></a>
+                        </div>
+                        <ul class="maincontent__charts-list">
+                            <li class="maincontent__charts-item">
+                                <a href="" class="maincontent__charts-cart">
+                                    <div class="maincontent__charts-container">
+                                        <img src="./assets/img/image_40.webp" alt="" class="maincontent__charts-img">
+                                        <div class="maincontent__charts-play">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+                                    <div class="maincontent__charts-body">
+                                        <div class="maincontent__charts-body-song">
+                                            <div class="maincontent__charts-body-name">Thiệp Hồng Em Trao</div>
+                                            <div class="maincontent__charts-body-singer">Nhật Phong</div>
+                                        </div>
+
+                                        <div class="maincontent__charts-body-top">
+                                            <span class="maincontent__charts-body-location">#1</span>
+                                            <span class="maincontent__charts-body-time">24.03.2023</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="maincontent__charts-item">
+                                <a href="" class="maincontent__charts-cart">
+                                    <div class="maincontent__charts-container">
+                                        <img src="./assets/img/image_21.webp" alt="" class="maincontent__charts-img">
+                                    </div>
+                                    <div class="maincontent__charts-body">
+                                        <div class="maincontent__charts-body-song">
+                                            <div class="maincontent__charts-body-name">Chuyện Chúng Ta Sau Này</div>
+                                            <div class="maincontent__charts-body-singer">Hải Đăng Doo</div>
+                                        </div>
+
+                                        <div class="maincontent__charts-body-top">
+                                            <span class="maincontent__charts-body-location">#2</span>
+                                            <span class="maincontent__charts-body-time">27.03.2023</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="maincontent__charts-item">
+                                <a href="" class="maincontent__charts-cart">
+                                    <div class="maincontent__charts-container">
+                                        <img src="./assets/img/image_18.webp" alt="" class="maincontent__charts-img">
+                                    </div>
+                                    
+                                    <div class="maincontent__charts-body">
+                                        <div class="maincontent__charts-body-song">
+                                            <div class="maincontent__charts-body-name">Sau Những Lần Đau</div>
+                                            <div class="maincontent__charts-body-singer">Hà Anh, Vinny Vũ</div>
+                                        </div>
+
+                                        <div class="maincontent__charts-body-top">
+                                            <span class="maincontent__charts-body-location">#3</span>
+                                            <span class="maincontent__charts-body-time">26.03.2023</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="maincontent__zingchart">
+                        <div class="maincontent__zingchart-container">
+                            <div class="maincontent__zingchart-header">
+                                <h2>#zingchart</h2>
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+
+                            <div class="maincontent__zingchart-body">
+                                <div class="maincontent__zingchart-top">
+                                    <ul class="maincontent__zingchart-list">
+                                        <li class="maincontent__zingchart-item">
+                                            <div class="maincontent__zingchart-item-body">
+                                                <div class="maincontent__zingchart-item-number-1">1</div>
+                                                <img src="./assets/img/image_42.webp" class="maincontent__zingchart-item-img"></img>
+                                                <div class="maincontent__zingchart-item-icon">
+                                                    <i class="fa-solid fa-play"></i>
+                                                </div>
+                                                <div class="maincontent__zingchart-item-info">
+                                                    <div class="maincontent__zingchart-item-name">Ngoài 30</div>
+                                                    <div class="maincontent__zingchart-item-singer">Thái Học</div>
+                                                </div>
+                                            </div>
+                                            <div class="maincontent__zingchart-item-pecent">41%</div>
+                                        </li>
+                                        <li class="maincontent__zingchart-item">
+                                            <div class="maincontent__zingchart-item-body">
+                                                <div class="maincontent__zingchart-item-number-2">2</div>
+                                                <img src="./assets/img/image_22.webp" class="maincontent__zingchart-item-img"></img>
+                                                <div class="maincontent__zingchart-item-icon">
+                                                    <i class="fa-solid fa-play"></i>
+                                                </div>
+                                                <div class="maincontent__zingchart-item-info">
+                                                    <div class="maincontent__zingchart-item-name">Lại nhớ em rồi</div>
+                                                    <div class="maincontent__zingchart-item-singer">DICKSON, Tuệ Phương</div>
+                                                </div>
+                                            </div>
+                                            <div class="maincontent__zingchart-item-pecent">32%</div>
+                                        </li>
+                                        <li class="maincontent__zingchart-item">
+                                            <div class="maincontent__zingchart-item-body">
+                                                <div class="maincontent__zingchart-item-number-3">3</div>
+                                                <img src="./assets/img/image_21.webp" class="maincontent__zingchart-item-img"></img>
+                                                <div class="maincontent__zingchart-item-icon">
+                                                    <i class="fa-solid fa-play"></i>
+                                                </div>
+                                                <div class="maincontent__zingchart-item-info">
+                                                    <div class="maincontent__zingchart-item-name">Chuyện chúng ta sau này</div>
+                                                    <div class="maincontent__zingchart-item-singer">Hải Đăng Doo</div>
+                                                </div>
+                                            </div>
+                                            <div class="maincontent__zingchart-item-pecent">27%</div>
+                                        </li>
+                                    </ul>
+                                    <a href="" class="maincontent__zingchart-btn">Xem thêm</a>
+                                </div>
+                                <div class="maincontent__zingchart-chart">
+                                    <svg class="maincontent__zingchart-box" width = '500' height = '260'>
+                                        <polyline class="maincontent__zingchart-line" points = "0,1 500,1"/>
+                                        <polyline class="maincontent__zingchart-line" points = "0,65 500,65"/>
+                                        <polyline class="maincontent__zingchart-line" points = "0,130 500,130"/>
+                                        <polyline class="maincontent__zingchart-line" points = "0,195 500,195"/>
+                                        <polyline class="maincontent__zingchart-line" points = "0,259 500,259"/>
+                                        <path class="maincontent__zingchart-line-1" d="m-1.33327,137.33344c24.66668,8.66667 10.84849,6.18182 22.66661,11.33328c11.81812,5.15146 23.81825,4.54551 32.00001,-4.66667c8.18176,-9.21218 36.66674,-6.66661 38.66668,6.66667c13.3334,34.66674 22.66674,-25.99995 31.33334,-30.00001c16.66674,-5.99995 13.63644,11.63642 20.00001,11.33334c6.36357,-0.30309 23.63644,-50.54542 32.96971,-58.54548c9.33327,-8.00005 23.03038,16.54551 23.03031,16.54546c0.00007,0.00005 22.00007,34.66673 22.00001,34.66668c0.00007,0.00006 14.00007,14.66673 14.00001,14.66667c8.00007,8.00006 22.01733,-3.85296 24.00001,-7.33334c1.98268,-3.48038 5.2728,-12.66662 6,-15.33334c1.75764,-5.5151 20.28558,-12.85748 26.66668,-22.00001c6.3811,-9.14253 27.57584,-67.39391 38.42426,-60.90911c8.66674,3.33339 11.57583,21.57582 11.57576,21.57576c-0.30296,11.81823 11.33341,22.00006 11.33334,22.00001c6.36371,4.54551 14.38992,-2.14723 24.66675,-6.66661c10.27683,-4.51938 19.33334,12 20.66667,13.33334c1.33333,1.33333 5.83536,6.23394 13.99993,12.66662c8.16457,6.43268 20.72721,2.72722 24.66668,6.66667c3.93947,3.93945 18.72736,7.03036 26.00008,4.66672c7.27273,-2.36364 8.19056,-0.95261 15.33327,-4.66672c7.14271,-3.71411 13.87872,-7.51521 16.00001,-6c2.12129,1.51521 5.33341,0.00005 5.33334,0"/>
+                                        <path class="maincontent__zingchart-line-2" d="m-0.55586,150.13378c19.44442,14.44443 16.11109,8.33332 22.77806,11.11124c11.66635,2.77763 19.59737,-2.43309 21.11109,-3.33333c13.54374,-2.81623 16.26404,-3.46757 17.77776,-3.33333c2.62421,-0.47907 15.74681,-5.82389 20.36397,-1.55173c7.45178,5.38298 5.07632,10.45962 7.96934,12.66283c9.52074,12.27952 18.27554,1.9922 16.34098,4.1954c4.34834,-6.34112 16.07248,-21.64764 22.06894,-24.27201c10.33205,-4.55938 20.31928,-16.70495 30.99616,-13.67814l66.70488,33.1992c14.69314,4.3485 48.50539,-33.33344 52.77772,-33.88885c11.24487,-7.72043 43.33298,-18.88901 42.77773,-19.44442c7.79661,-3.58251 9.36751,-22.83538 23.98464,-28.90802c26.41725,-5.9963 56.43642,26.28334 59.32944,25.38311c17.10693,9.86573 57.96899,13.40982 62.24131,16.30268c11.24487,1.58989 10.32536,21.28336 17.2219,26.66649c6.89653,5.38313 17.2222,0.55555 16.66695,0.00014"/>
+                                        <path class="maincontent__zingchart-line-3" d="m-0.76925,163.26921c51.25,32.5 66.01821,39.48218 77.50001,41.25c11.4818,1.76782 26.85725,-10.71441 30.625,-14.375c3.76775,-3.66059 32.30403,-36.33941 47.49999,-40c15.19597,-3.66059 43.55372,16.23224 48.74999,20c5.19628,3.76775 34.53608,49.55322 46.87499,38.75c12.33891,-10.80323 31.89338,-75.82158 49.37499,-80.62499c17.48161,-4.80341 24.78596,-12.10741 33.125,-20.625c8.33904,-8.51758 44.76817,10.23241 55.62498,20.62499c10.85681,10.39258 37.44673,10.07136 47.50001,8.12501c10.05327,-1.94636 28.71448,8.21442 35.625,13.125c6.91051,4.91058 27.49999,-16.875 26.875,-17.5"/>
+                                    </svg>
+
+                                    <ul class="maincontent__zingchart-time">
+                                        <li class="maincontent__zingchart-time-hour">01:00</li>
+                                        <li class="maincontent__zingchart-time-hour">03:00</li>
+                                        <li class="maincontent__zingchart-time-hour">05:00</li>
+                                        <li class="maincontent__zingchart-time-hour">07:00</li>
+                                        <li class="maincontent__zingchart-time-hour">09:00</li>
+                                        <li class="maincontent__zingchart-time-hour">11:00</li>
+                                        <li class="maincontent__zingchart-time-hour">13:00</li>
+                                        <li class="maincontent__zingchart-time-hour">15:00</li>
+                                        <li class="maincontent__zingchart-time-hour">17:00</li>
+                                        <li class="maincontent__zingchart-time-hour">19:00</li>
+                                        <li class="maincontent__zingchart-time-hour">21:00</li>
+                                        <li class="maincontent__zingchart-time-hour">23:00</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="maincontent__category">
+                        <a class="maincontent__category-item">
+                            <img src="./assets/img/image_43.jpg" alt="" class="maincontent__category-img">
+                        </a>
+                        <a class="maincontent__category-item">
+                            <img src="./assets/img/image_44.jpg" alt="" class="maincontent__category-img">
+                        </a>
+                        <a class="maincontent__category-item">
+                            <img src="./assets/img/image_45.jpg" alt="" class="maincontent__category-img">
+                        </a>
+                    </div>
+
+                    <div class="maincontent__top">
+                        <div class="maincontent__top-header">
+                            <h2>Top 100</h2>
+                        </div>
+                        <div class="maincontent__top-body">
+                            <div class="maincontent__top-body-cart">
+                                <a href="" class="maincontent__top-body-link">
+                                    <img src="./assets/img/image_46.webp" alt="" class="maincontent__top-body-img">
+                                    <div class="maincontent__top-body-play">
+                                        <div class="maincontent__top-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="maincontent__top-body-content">Top 100 Nhạc V-Pop Hay Nhất</a>
+                                <a href="" class="maincontent__top-body-singer">Jack, MONO, Tăng Duy Tân</a>
+                            </div>
+                            <div class="maincontent__top-body-cart">
+                                <a href="" class="maincontent__top-body-link">
+                                    <img src="./assets/img/image_47.webp" alt="" class="maincontent__top-body-img">
+                                    <div class="maincontent__top-body-play">
+                                        <div class="maincontent__top-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="maincontent__top-body-content">Top 100 Nhạc EDM Việt Hay Nhất</a>
+                                <a href="" class="maincontent__top-body-singer">Masew, Pháo, CM1X</a>
+                            </div>
+                            <div class="maincontent__top-body-cart">
+                                <a href="" class="maincontent__top-body-link">
+                                    <img src="./assets/img/image_48.webp" alt="" class="maincontent__top-body-img">
+                                    <div class="maincontent__top-body-play">
+                                        <div class="maincontent__top-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="maincontent__top-body-content">Top 100 Bài Nhạc Trẻ Hay Nhất</a>
+                                <a href="" class="maincontent__top-body-singer">Tăng Duy Tân, Phát Huy T-4, MONO</a>
+                            </div>
+                            <div class="maincontent__top-body-cart">
+                                <a href="" class="maincontent__top-body-link">
+                                    <img src="./assets/img/image_49.webp" alt="" class="maincontent__top-body-img">
+                                    <div class="maincontent__top-body-play">
+                                        <div class="maincontent__top-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="maincontent__top-body-content">Top 100 Pop Âu Mỹ Hay Nhất</a>
+                                <a href="" class="maincontent__top-body-singer">Adele, Sam Smith, Miley Cyrus</a>
+                            </div>
+                            <div class="maincontent__top-body-cart">
+                                <a href="" class="maincontent__top-body-link">
+                                    <img src="./assets/img/image_50.webp" alt="" class="maincontent__top-body-img">
+                                    <div class="maincontent__top-body-play">
+                                        <div class="maincontent__top-body-play-container">
+                                            <i class="fa-regular fa-heart icon-heart"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis icon-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="maincontent__top-body-content">Top 100 Nhạc Electronic/Dance Âu Mỹ Hay Nhất</a>
+                                <a href="" class="maincontent__top-body-singer">Alan Walker, K-391, Emelie Hollow</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="maincontent__radio">
+                        <div class="maincontent__radio-header">
+                            <h2 class="maincontent__radio-header-left">Radio Nổi Bật</h2>
+                            <a href="" class="maincontent__radio-header-right">TẤT CẢ ></a>
+                        </div>
+                        <div class="maincontent__radio-list">
+                            <div class="maincontent__radio-item">
+                                <div class="maincontent__radio-body">
+                                    <img src="./assets/img/image_51.webp" class="maincontent__radio-body-img">
+                                    <div class="maincontent__radio-body-icon">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="maincontent__radio-host">
+                                    <img src="./assets/img/image_58.webp" alt="">
+                                </div>
+                                <span class="maincontent__radio-live">LIVE</span>
+    
+                                <div class="maincontent__radio-name">
+                                    <h2 class="maincontent__radio-name-heading">XONE Radio</h2>
+                                    <span class="maincontent__radio-name-quantity">420 đang nghe</span>
+                                </div>
+                            </div>
+                            <div class="maincontent__radio-item">
+                                <div class="maincontent__radio-body">
+                                    <img src="./assets/img/image_52.webp" class="maincontent__radio-body-img">
+                                    <div class="maincontent__radio-body-icon">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="maincontent__radio-host">
+                                    <img src="./assets/img/image_59.webp" alt="">
+                                </div>
+                                <span class="maincontent__radio-live">LIVE</span>
+    
+                                <div class="maincontent__radio-name">
+                                    <h2 class="maincontent__radio-name-heading">V-POP</h2>
+                                    <span class="maincontent__radio-name-quantity">2102 đang nghe</span>
+                                </div>
+                            </div>
+                            <div class="maincontent__radio-item">
+                                <div class="maincontent__radio-body">
+                                    <img src="./assets/img/image_53.webp" class="maincontent__radio-body-img">
+                                    <div class="maincontent__radio-body-icon">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="maincontent__radio-host">
+                                    <img src="./assets/img/image_60.webp" alt="">
+                                </div>
+                                <span class="maincontent__radio-live">LIVE</span>
+    
+                                <div class="maincontent__radio-name">
+                                    <h2 class="maincontent__radio-name-heading">Pladio</h2>
+                                    <span class="maincontent__radio-name-quantity">1210 đang nghe</span>
+                                </div>
+                            </div>
+                            <div class="maincontent__radio-item">
+                                <div class="maincontent__radio-body">
+                                    <img src="./assets/img/image_54.webp" class="maincontent__radio-body-img">
+                                    <div class="maincontent__radio-body-icon">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="maincontent__radio-host">
+                                    <img src="./assets/img/image_61.webp" alt="">
+                                </div>
+                                <span class="maincontent__radio-live">LIVE</span>
+    
+                                <div class="maincontent__radio-name">
+                                    <h2 class="maincontent__radio-name-heading">Chạm</h2>
+                                    <span class="maincontent__radio-name-quantity">520 đang nghe</span>
+                                </div>
+                            </div>
+                            <div class="maincontent__radio-item">
+                                <div class="maincontent__radio-body">
+                                    <img src="./assets/img/image_55.webp" class="maincontent__radio-body-img">
+                                    <div class="maincontent__radio-body-icon">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="maincontent__radio-host">
+                                    <img src="./assets/img/image_62.webp" alt="">
+                                </div>
+                                <span class="maincontent__radio-live">LIVE</span>
+    
+                                <div class="maincontent__radio-name">
+                                    <h2 class="maincontent__radio-name-heading">On Air</h2>
+                                    <span class="maincontent__radio-name-quantity">21 đang nghe</span>
+                                </div>
+                            </div>
+                            <div class="maincontent__radio-item">
+                                <div class="maincontent__radio-body">
+                                    <img src="./assets/img/image_56.webp" class="maincontent__radio-body-img">
+                                    <div class="maincontent__radio-body-icon">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="maincontent__radio-host">
+                                    <img src="./assets/img/image_63.webp" alt="">
+                                </div>
+                                <span class="maincontent__radio-live">LIVE</span>
+    
+                                <div class="maincontent__radio-name">
+                                    <h2 class="maincontent__radio-name-heading">Bolero</h2>
+                                    <span class="maincontent__radio-name-quantity">129 đang nghe</span>
+                                </div>
+                            </div>
+                            <div class="maincontent__radio-item">
+                                <div class="maincontent__radio-body">
+                                    <img src="./assets/img/image_57.webp" class="maincontent__radio-body-img">
+                                    <div class="maincontent__radio-body-icon">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="maincontent__radio-host">
+                                    <img src="./assets/img/image_64.webp" alt="">
+                                </div>
+                                <span class="maincontent__radio-live">LIVE</span>
+    
+                                <div class="maincontent__radio-name">
+                                    <h2 class="maincontent__radio-name-heading">US-UK</h2>
+                                    <span class="maincontent__radio-name-quantity">510 đang nghe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <h2 class="footer__heading">
+                        ĐỐI TÁC ÂM NHẠC
+                    </h2>
+
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <img src="./assets/img/image_65.png" alt="" class="footer__item-img">
+                        </li>
+                        <li class="footer__item">
+                            <img src="./assets/img/image_66.png" alt="" class="footer__item-img">
+                        </li>
+                        <li class="footer__item">
+                            <img src="./assets/img/image_67.png" alt="" class="footer__item-img">
+                        </li>
+                        <li class="footer__item">
+                            <img src="./assets/img/image_68.png" alt="" class="footer__item-img">
+                        </li>
+                        <li class="footer__item">
+                            <img src="./assets/img/image_69.png" alt="" class="footer__item-img">
+                        </li>
+                        <li class="footer__item">
+                            <img src="./assets/img/image_70.png" alt="" class="footer__item-img">
+                        </li>
+                        <li class="footer__item">
+                            <img src="./assets/img/image_71.png" alt="" class="footer__item-img">
+                        </li>
+                        <li class="footer__item">
+                            <img src="./assets/img/image_72.png" alt="" class="footer__item-img">
+                        </li>
+                        <li class="footer__item">
+                            <img src="./assets/img/image_73.png" alt="" class="footer__item-img">
+                        </li>
+                        <li class="footer__item">
+                            <img src="./assets/img/image_74.png" alt="" class="footer__item-img">
+                        </li>
+                        <li class="footer__item">
+                            <img src="./assets/img/image_75.png" alt="" class="footer__item-img">
+                        </li>
+                        <li class="footer__item">
+                            <img src="./assets/img/image_76.png" alt="" class="footer__item-img">
+                        </li>
+                        <li class="footer__item">
+                            <img src="./assets/img/image_77.png" alt="" class="footer__item-img">
+                        </li>
+                        <li class="footer__item">
+                            <img src="./assets/img/image_78.png" alt="" class="footer__item-img">
+                        </li>
+                        <li class="footer__item">
+                            <img src="./assets/img/image_79.png" alt="" class="footer__item-img">
+                        </li>
+                        <li class="footer__item">
+                            <img src="./assets/img/image_80.png" alt="" class="footer__item-img">
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="player">
+            <div class="player__info">
+                <a href="" class="player__info-link">
+                    <div class="player__info-img"></div>
+                    <div class="player__info-body">
+                        <span class="player__info-name">Sau Những Lần Đau</span>
+                        <span class="player__info-singer">Hà Anh, Vinny Vũ</span>
+                    </div>
+                </a>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="player__controls-center">
+                <div class="player__controls-center-top">
+                    <div class="btn-random">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                    <div class="btn-back">
+                        <i class="fa-solid fa-backward-step"></i> 
+                    </div>
+                    <div class="btn-play">
+                        <i class="fa-regular fa-circle-play icon-play-btn"></i>
+                        <i class="fa-regular fa-circle-pause icon-pause-btn"></i>
+                    </div>
+                    <div class="btn-next">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </div>
+                    <div class="btn-repeat">
+                        <i class="fa-solid fa-repeat"></i>
+                    </div>
+                </div>
+                <input class="player__controls-input" type="range" value="0" step="1" min="0" max="100">
+            </div>
+            <audio src="" id="audio"></audio>
+            <div class="player__controls-right">
+                <div class="player__controls-body">
+                    <a href="" class="btn-mv">MV</a>
+                    <div class="btn-mic">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                    </div>
+                    <div class="btn-volume">
+                        <i class="fa-solid fa-volume-low"></i>
+                        <input type="range" name="" class="btn-volume-input">
+                    </div>
+                </div>
+                <span class="play__controls-line"></span>
+                <div class="player__controls-list js-player__controls-list">
+                    <i class="fa-brands fa-playstation"></i>
+                </div>
+                <div class="player__controls-playlist js-player__controls-playlist">
+                    <div class="player__playlist-header">
+                        <div class="player__playlist-header-btns">
+                            <button class="player__playlist-header-btn player__active-btn">Danh sách phát</button>
+                            <button class="player__playlist-header-btn">Nghe gần đây</button>
+                        </div>
+                        <div class="player__playlist-header-clock">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+
+                        <div class="player__playlist-header-dots">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+
+                    <div class="player__playlist-autoplay">
+                        <div class="player__playlist-autoplay-desc">Tự động phát</div>
+                        <input type="checkbox" class="player__playlist-autoplay-btn">
+                    </div>
+
+                    <ul class="player__playlist-body">
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
